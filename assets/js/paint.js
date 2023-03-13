@@ -82,12 +82,11 @@ function getProductInfo(paintColor) {
   function updatePrice(colorName, price) {
     let colorPrice = document.getElementById("color-price");
     colorPrice.innerText = price;
-  
+
     let color = document.getElementById("color-name");
     color.innerText = colorName;
-  
+
     let img = document.getElementById(paintColor);
     img.setAttribute("title", `${colorName} - ${price}`);
   }
-  
 }
